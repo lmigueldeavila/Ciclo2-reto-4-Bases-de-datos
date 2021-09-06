@@ -1,0 +1,20 @@
+create table servicio(
+  ser_id int not null primary key,
+  ser_titulo char(50)
+);
+
+insert into servicio (ser_id, ser_titulo) values
+(101, "Ray of Light"),
+(102, "Writer In The Dark"),
+(103, "Love Story"),
+(104, "My Heart Is Broken"),
+(105, "La rebelión"),
+(201, "The Daily"),
+(202, "Something Was Wrong"),
+(203, "SmartLess"),
+(204, "Up First"),
+(205, "The Rise and Fall of Mars Hill"),
+(206, "Bridgewater"),
+(207, "Morning Wire"),
+(208, "Park Predators");
+
