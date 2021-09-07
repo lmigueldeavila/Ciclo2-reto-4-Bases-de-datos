@@ -1,0 +1,16 @@
+create table podcast(
+  pod_id int,
+  pod_episodios,
+  pod_temporadas
+);
+
+insert into podcast(pod_id, pod_episodios, pod_temporadas)
+values
+(201, 153, 11),
+(202, 80, 3),
+(203, 30, 3),
+(204, 31, 4),
+(205, 236, 10),
+(206, 170, 8),
+(207, 279, 12),
+(208, 79, 6);
