@@ -1,4 +1,4 @@
-drop table if exist cancion;
+drop table if exists cancion;
 
 create table cancion(
   can_id int,
