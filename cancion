@@ -1,3 +1,5 @@
+drop table if exist cancion;
+
 create table cancion(
   can_id int,
   can_resenia char(255),
