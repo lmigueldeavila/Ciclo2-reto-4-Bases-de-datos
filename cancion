@@ -1,7 +1,7 @@
 drop table if exists cancion;
 
 create table cancion(
-  can_id int,
+  can_id int primary key,
   can_resenia char(255),
   cant_anio int,
   can_cantante int,
