@@ -1,7 +1,7 @@
 drop table if exists cliente;
 
 create table cliente(
-  cli_username char(20),
+  cli_username char(20) primary key,
   cli_nombre char(20),
   cli_apellido char(20),
   cli_email char(30),
