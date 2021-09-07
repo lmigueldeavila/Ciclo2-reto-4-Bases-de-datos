@@ -1,0 +1,20 @@
+create table cliente(
+  cli_username char(20),
+  cli_nombre char(20),
+  cli_apellido char(20),
+  cli_email char(30),
+  cli_celular bigint,
+  cli_clave char(20),
+  cli_fecha_nto date
+);
+
+insert into cliente(cli_username, cli_nombre, cli_apellido, cli_email, cli_celular, cli_clave, cli_fecha_nto)
+values
+("deadofwrite", "Luis", "Lopez", "luislopez@gmail.com", 3274938578, "holaluislopez", "1996-10-03"),
+("dreamer", "Pedro", "Andres", "pedroandres@gmail.com", 3489578378, "holapedroandres", "1984-01-07"),
+("iamwellandgood", "Luis", "Cruz", "luiscruz@gmail.com", 3757677898, "holaluiscruz", "2001-03-27"),
+("inkandfable", "Jorge", "Dias", "jorgediaz@gmail.com", 312454567, "holajorgediaz", "2010-11-1"),
+("loversland", "Maria", "Perez", "mariaperez@gmail.com", 3234564567, "holamariaperez", "2000-12-12"),
+("neon", "Claudia", "Mendez", "claudiamendez@gmail.com", 3023486950, "holaclaudiamendez", "1996-06-06"),
+("rose", "Nelly", "Rodriguez", "nellyrodrigues@gmail.com", 3003445569, "holanellyrodriguez", "2005-5-15"),
+("true.living", "Ana", "Rojas", "anarojas@gmail.com", 3177938799, "holaanarojas", "2009-4-29");
