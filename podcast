@@ -2,8 +2,8 @@ drop table if exists podcast;
 
 create table podcast(
   pod_id int,
-  pod_episodios,
-  pod_temporadas
+  pod_episodios int,
+  pod_temporadas int
 );
 
 insert into podcast(pod_id, pod_episodios, pod_temporadas)
