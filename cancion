@@ -4,9 +4,9 @@ create table cancion(
   can_id int,
   can_resenia char(255),
   cant_anio int,
-  can_cantante int;
+  can_cantante int,
   foreign key (can_id) references servicio(ser_id),
-  foreign key (can_cantante) references servicio(cant_id),
+  foreign key (can_cantante) references servicio(cant_id)
 );
 
 insert into cancion(can_id, can_resenia, can_anio, can_cantante)
@@ -17,7 +17,7 @@ values
 2017, 1002),
 (103, "La historia lubrica el paisajístico clima de una pareja paradigmática (Aunque un poco cliché) bueno para adornarse con el nombre de Romeo y Julieta, los amantes de Verona",
 2008, 1003),
-(104, "El tema más representativo de todo el grupo: ambiente gótico, desesperación y dolor, lo que veníamos catando en sus álbumes anteriores"
+(104, "El tema más representativo de todo el grupo: ambiente gótico, desesperación y dolor, lo que veníamos catando en sus álbumes anteriores",
 2011, 1004),
-(105, "Es una voz de protesta ante la indiferencia de siempre ante las atrocidades cometidas contra un pueblo. Describe el esclavismo despiadado y el poblamiento de Cartagena de Indias con esclavos traídos del continente africano y su sometimiento sangriento"
+(105, "Es una voz de protesta ante la indiferencia de siempre ante las atrocidades cometidas contra un pueblo. Describe el esclavismo despiadado y el poblamiento de Cartagena de Indias con esclavos traídos del continente africano y su sometimiento sangriento",
 1998, 1005);
