@@ -1,3 +1,5 @@
+drop table if exists cliente;
+
 create table cliente(
   cli_username char(20),
   cli_nombre char(20),
