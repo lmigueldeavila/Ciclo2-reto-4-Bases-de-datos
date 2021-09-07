@@ -1,0 +1,14 @@
+create table cantante(
+  cant_id int,
+  cant_nombre char(20),
+  cant_apellido char(20),
+  cant_nacionalidad char(40)
+);
+
+insert into cantante(cant_id, cant_nombre, cant_apellido, cant_nacionalidad) 
+values
+(1001, Taylor, Swift, estadounidense),
+(1002, Madonna Louise, Ciccone, estadounidense),
+(1003, Ella, Marija, neozelandeza),
+(1004, Amy, Lee, estadounidense),
+(1005, Joe, arroyo, colombiano);
