@@ -1,3 +1,5 @@
+drop table if exists transmision;
+
 create table transmision(
   tra_id int,
   tra_user char(40),
