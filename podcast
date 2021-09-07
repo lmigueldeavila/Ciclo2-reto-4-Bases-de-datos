@@ -1,3 +1,5 @@
+drop table if exists podcast;
+
 create table podcast(
   pod_id int,
   pod_episodios,
