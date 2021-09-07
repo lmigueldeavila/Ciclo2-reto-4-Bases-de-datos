@@ -4,7 +4,7 @@ create table transmision(
   tra_id int,
   tra_user char(40),
   tra_ser int,
-  tra_fecha datetime  
+  tra_fecha datetime,  
   foreign key (tra_user) references cliente(cli_username),
   foreign key (tra_ser) references servicio
 );
