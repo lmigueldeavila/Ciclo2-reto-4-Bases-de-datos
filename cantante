@@ -1,7 +1,7 @@
 drop table if exists cantante;
 
 create table cantante(
-  cant_id int,
+  cant_id int primari key,
   cant_nombre char(20),
   cant_apellido char(20),
   cant_nacionalidad char(40)
