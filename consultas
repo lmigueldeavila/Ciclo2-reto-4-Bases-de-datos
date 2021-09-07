@@ -1,0 +1,6 @@
+SELECT * FROM servicio, cancion;
+SELECT ser_titulo, can_resenia, can_anio FROM servicio, cancion WHERE can_anio > 1999;
+
+SELECT * FROM cantante, cancion, servicio;
+SELECT ser_titulo FROM servicio WHERE cant_nombre=Joe;
+
