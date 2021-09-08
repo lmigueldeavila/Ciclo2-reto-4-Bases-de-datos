@@ -1,5 +1,4 @@
 drop table if exists transmision;
-
 create table transmision(
   tra_id int primary key,
   tra_user char(40),
@@ -8,7 +7,6 @@ create table transmision(
   foreign key (tra_user) references cliente(cli_username),
   foreign key (tra_ser) references servicio(ser_id)
 );
-
 insert into transmision(tra_id, tra_user, tra_ser, tra_fecha)
 values
 (1, "deadofwrite", 101, "2017-10-25 20:00:00"),
