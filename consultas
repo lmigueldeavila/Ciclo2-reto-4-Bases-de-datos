@@ -16,4 +16,5 @@ SELECT ser_titulo FROM servicio, transmision WHERE transmision.tra_user LIKE "de
 -- 3.2 SELECT ser_titulo, can_resenia, can_anio FROM servicio, cancion WHERE cancion.can_id = servicio.ser_id and can_anio > 1999 ORDER BY ser_titulo;
 -- 3.3 SELECT ser_titulo FROM servicio WHERE ser_id = (SELECT can_id FROM cancion WHERE can_cantante = (SELECT cant_id FROM cantante WHERE cant_nombre LIKE "Joe"));
 -- 3.4 SELECT ser_titulo FROM servicio, transmision WHERE tra_user LIKE'deadofwrite' and servicio.ser_id=transmision.tra_ser ORDER BY ser_titulo;
+-- 3.5 SELECT cli_username, cli_nombre, cli_apellido FROM servicio, transmision, cliente WHERE ser_titulo LIKE 'SmartLess' and cliente.cli_username=transmision.tra_user and transmision.tra_ser=servicio.ser_id ORDER BY cli_username, cli_nombre, cli_apellido;
 
