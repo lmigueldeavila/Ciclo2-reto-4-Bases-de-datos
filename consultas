@@ -10,4 +10,4 @@ SELECT ser_titulo FROM servicio WHERE ser_id = (SELECT can_id FROM cancion WHERE
 SELECT ser_titulo FROM servicio,cancion, cantante WHERE servicio.ser_id = cancion.can_id and cantante.cant_nombre LIKE "Joe";
 
 SELECT ser_titulo FROM servicio WHERE ser_id = (SELECT tra_ser FROM transmision WHERE tra_user LIKE "deadofwrite");
-SELECT ser_titulo FROM servicio, transmision WHERE transmision.tra_user LIKE "deadofwrite";
+SELECT ser_titulo FROM servicio, transmision WHERE transmision.tra_user LIKE "deadofwrite" ORDER BY ser_titulo;
