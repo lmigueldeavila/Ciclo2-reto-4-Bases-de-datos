@@ -6,7 +6,7 @@ create table transmision(
   tra_ser int,
   tra_fecha datetime,  
   foreign key (tra_user) references cliente(cli_username),
-  foreign key (tra_ser) references servicio
+  foreign key (tra_ser) references servicio(ser_id)
 );
 
 insert into transmision(tra_id, tra_user, tra_ser, tra_fecha)
